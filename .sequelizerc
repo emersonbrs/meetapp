@@ -1,0 +1,10 @@
+// Arquivo que vai exportar os caminhos aonde estão os arquivos e pastas criados na aplicação.
+// Nele é preciso utilizar a sintaxe antes do Import e Export, pois sequelize-cli nao consegue os ler.
+const { resolve } = require('path'); // O path padroniza os caminhos nos sistemas operacionais.
+
+module.exports = {
+  config: resolve(__dirname, 'src', 'config', 'database.js'), // Retorna o caminho exato para o config do database
+  'models-path': resolve(__dirname, 'src', 'app', 'models'), // Retorna o caminho exato para a pasta de models (as aspas é para que o hífen não retorne erro)
+  'migrations-path': resolve(__dirname, 'src', 'database', 'migrations'), // Retorna o caminho exato para a pasta de migrations
+  'seeders-path': resolve(__dirname, 'src', 'database', 'seeds'), // Retorna o caminho exato para a pasta de seeds
+};
