@@ -1,5 +1,5 @@
 # Aplicação
-app agregador de eventos para desenvolvedores chamado Meetapp (um acrônimo à Meetup + App).
+App agregador de eventos para desenvolvedores chamado Meetapp (um acrônimo à Meetup + App).
 
 ## Funcionalidades
 Abaixo estão descritas as funcionalidades da aplicação.
